@@ -1,13 +1,15 @@
-import { useState } from 'react'
-
+import { useEffect, useState } from 'react'
+import {PokemonCard} from "./components/PokemonCard"
 
 function App() {
 
-  
+  useEffect(()=>{
+    
+  },[])
 
   return (
     <>
-      <h1 className='text-5xl text-yellow-400'>hello world</h1>
+      
     </>
   )
 }
