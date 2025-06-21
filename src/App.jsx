@@ -18,7 +18,6 @@ function App() {
       })
       const pokemonFinalData = await Promise.all(pokemonDataUrl)
       setPokemon(pokemonFinalData)
-      console.log(pokemonFinalData)
     }
     pokemonData()
 
@@ -27,7 +26,6 @@ function App() {
   const searchedData = pokemon.filter((curr)=>
     curr.name.toLowerCase().includes(search.toLowerCase())
   )
-  console.log(searchedData)
   return (
     <div className='w-full min-h-screen flex flex-col items-center bg-gradient-to-br from-slate-400 to-emerald-600 select-none p-10'>
       <h1 className='text-5xl font-bold text-shadow-black heading-stroke mb-9'>Pokemon Cards</h1>
