@@ -32,7 +32,7 @@ function App() {
     <div className='w-full min-h-screen flex flex-col items-center bg-gradient-to-br from-slate-400 to-emerald-600 select-none p-10'>
       <h1 className='text-5xl font-bold text-shadow-black heading-stroke mb-9'>Pokemon Cards</h1>
       <input type='text' value={search} onChange={(e)=>{setSearch(e.target.value)
-      }} className='w-72 h-14 bg-white rounded-3xl border-4 p-3 text-2xl caret-transparent' spellCheck={false}></input>
+      }} className='w-72 h-14 bg-white rounded-3xl border-4 p-3 text-2xl caret-transparent' spellCheck={false} placeholder='Search Your Pokemon'></input>
       <div className='w-full place-items-center gap-8 mt-9 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
         {searchedData.map(curr=>{
           return < PokemonCard key={curr.id} pokemonData={curr}/>
